@@ -31,6 +31,7 @@ gem 'table_print'
 gem 'faker'
 gem 'dotenv-rails'
 gem 'letter_opener'
+gem 'sendgrid-ruby'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
