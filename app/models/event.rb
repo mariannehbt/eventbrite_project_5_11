@@ -3,11 +3,9 @@ class Event < ApplicationRecord
 	has_many :users, through: :attendances
 	belongs_to :user
 
-	validates :start_date, presence: true
-	# validate :start_date_not_in_the_past_?
+	validates :start_date, presence: true, date: { after_or_equal_to: Proc.new { Date.today }, message: "must be at least #{(Date.today).to_s}" }, on: :create
 
-	validates :duration, 
-		presence: true
+	validates :duration, presence: true
 
 	validates :title, 
 		presence: true,
@@ -23,17 +21,9 @@ class Event < ApplicationRecord
 
 	validates :location, presence: true
 
-	# private
-
-	# def start_date_not_in_the_past_?
-	# 	return if start_date == Time.now
-
-	# 	else
-	# 		errors.add(:start_date, "Not good date")
-	# 	end
-	# end
-
 end
+
+
 
 
 
