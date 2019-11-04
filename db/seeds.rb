@@ -3,10 +3,10 @@
 
 require 'faker'
 
-nb_users = 20
-nb_users_yopmail = 10
-nb_events = 20
-nb_attendances = 20
+nb_users = 10
+nb_users_yopmail = 5
+nb_events = 10
+nb_attendances = 10
 
 #Create n fake users with Faker gem
 nb_users.times do |i|
