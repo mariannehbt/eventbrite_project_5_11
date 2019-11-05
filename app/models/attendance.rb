@@ -1,7 +1,7 @@
 class Attendance < ApplicationRecord
-	after_create :information_send
+  after_create :information_send
 
-	belongs_to :guest, class_name: 'User'
+  belongs_to :guest, class_name: 'User'
 
   belongs_to :attended_event, class_name: 'Event'
 
@@ -9,7 +9,7 @@ class Attendance < ApplicationRecord
   presence: true,
   uniqueness: true
 
-	private
+  private
 
   # sending notification email to event creator
   def information_send

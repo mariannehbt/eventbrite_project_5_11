@@ -33,6 +33,7 @@ gem 'dotenv-rails'
 gem 'letter_opener'
 gem 'sendgrid-ruby'
 gem 'date_validator'
+gem 'devise'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
