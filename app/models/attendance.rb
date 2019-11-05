@@ -1,12 +1,19 @@
 class Attendance < ApplicationRecord
-	# after_create :information_send
+	after_create :information_send
 
-	belongs_to :user 
-	belongs_to :event
+	belongs_to :guest, class_name: 'User'
 
-	# def information_send
- #    attendee = AttendanceMailer.new
- #    information_email(attendee).deliver_now
- #  end
+  belongs_to :attended_event, class_name: 'Event'
+
+  validates :stripe_customer_id,
+  presence: true,
+  uniqueness: true
+
+	private
+
+  # sending notification email to event creator
+  def information_send
+    AttendanceMailer.new_guest_email(self.attended_event.host).deliver_now
+  end
 
 end
