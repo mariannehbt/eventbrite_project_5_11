@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+  before_action :is_creator?
 
   # GET /users
   def index
@@ -8,7 +10,7 @@ class UsersController < ApplicationController
 
   # GET /users/1
   def show
-
+    @user = User.find(params[:id]) 
   end
 
   # GET /users/new
@@ -56,5 +58,13 @@ class UsersController < ApplicationController
 
     def user_params
       params.require(:user).permit(:email, :password, :password_confirmation, :first_name, :last_name, :description)
+    end
+
+    def is_creator?
+      @user = User.find(params[:id])
+      unless @user.id == current_user.id
+      flash[:danger] = "This is not your account"
+      redirect_to user_path(current_user)
+      end
     end
 end

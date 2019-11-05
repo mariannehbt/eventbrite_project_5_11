@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create your event</title>
+</head><body class="bg-light">  <div class="container">
+    <div class="py-5 text-center">
+    </br>
+    <h2>Create your event</h2>
+    <p class="lead">Whatever you want anywhere anytime</p>
+  </div>  <div class="col-md-12 order-md-1">
+    <h4 class="mb-3">Start date</h4>    
+    <%= form_tag url_for(action: 'create'), method: "post" do %>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <%= label_tag 'Start date' %><br />
+        <%= text_field_tag 'start_date', @event.start_date, :class => 'form-control', placeholder: '2019-11-05 22:30:20' %> 
+      </div>
+      <div class="col-md-6 mb-3">
+        <%= label_tag 'Duration' %><br />
+        <%= text_field_tag 'duration', @event.duration, :class => 'form-control', placeholder: '60' %>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <%= label_tag 'Title' %><br />
+        <%= text_field_tag 'title', @event.title, :class => 'form-control', placeholder: '43' %>
+      </div>
+    </div>    <div class="mb-3">
+      <%= label_tag 'Description' %><br />
+      <%= text_field_tag 'description', @event.description, :class => 'form-control', placeholder: 'Jeune cadre dynamique avide de potins croustillants' %>
+    </div>    <div class="row">
+      <div class="col-md-6 mb-3">
+        <%= label_tag 'Price' %><br />
+        <%= text_field_tag 'price', @event.price, :class => 'form-control', placeholder: 'gael.dubois@gmail.com' %>
+      </div>
+      <div class="col-md-6 mb-3">
+        <%= label_tag 'Location' %><br />
+        <%= text_field_tag 'location', @event.location, :class => 'form-control', placeholder: 'password' %>
+      </div>
+    </div>  </br> <%= submit_tag "S'inscrire", :class => 'btn btn-primary btn-lg btn-block' %>  <% end %> <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; The Gossip Project</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer></body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!------ Include the above in your HEAD tag ---------->
+		<title>My profile</title>
+	</head>
+	<body>	
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 img">
+					<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvzOpl3-kqfNbPcA_u_qEZcSuvu5Je4Ce_FkTMMjxhB-J1wWin-Q"  alt="" class="img-rounded"></p>
+					<p><%= link_to "edit profile", edit_user_registration_path, class: "btn btn-primary" %></p>
+				</div>
+				<div class="col-md-6 details">
+					<blockquote>
+						<h3><%= @user.first_name %> <%= @user.last_name %></h3>
+					</blockquote>
+					<p>Description :<br>
+						"<%= @user.description %>"
+					</p>
+					<p>Email :<br>
+						<%= @user.email %>
+					</p>
+					<p>Membre depuis le :<br>
+						<%= @user.created_at %>
+					</p>
+					<p>Profil mis à jour le :<br>
+						<%= @user.updated_at %>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class='container-fluid'>
+		<h4 class='text-primary'>Events of <%= @user.first_name %> <%= @user.last_name %> :</h4>
+		<!-- Example row of columns -->
+		<div class ='row px-2 justify-content-around'>
+			<% @user.hosted_events.each do |hosted_event| %>
+			<div class ="card col-10 col-md-5 col-lg-3 mx-1 my-3 border-primary">
+				<div class="card-body">
+					<h2><%= hosted_event.title %></h2>
+					<p><%= link_to "More details", event_path(hosted_event.id.to_s), class: "btn btn-primary" %></p>
+				</div>
+			</div>
+			<% end %>
+		</div>
+		<hr>
+	</div> <!-- /container -->
+
+
+
+
+
+	</body>
+</html>

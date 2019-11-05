@@ -1,2 +1,25 @@
-<h1>Events#index</h1>
-<p>Find me in app/views/events/index.html.erb</p>
+ <!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron" style="background-image: url('/jumbotron_img.jpeg');">
+  <div class="container">
+	  <h1 class="display-3">Hello, world!</h1>
+	  <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+	  <p> <%= link_to "Your event", new_event_path, :class =>'btn btn-primary btn-lg' %> </p>
+	</div>
+</div>
+
+<div class='container-fluid'>
+	<div class ='row px-2 justify-content-around'>
+		<% @events.each do |event| %>
+		  <div class ="card col-10 col-md-5 col-lg-3 mx-1 my-3 border-primary">
+				<img class="card-img-top" src="<%= rand(1..5) %>.jpeg" alt="Card image cap">
+				<div class="card-body">
+				  <h3><%= event.title %></h3>
+				  <p><%= event.start_date %></p>
+				  <p><%= event.description %></p>
+				  <h4><%= event.location %></h4>
+          <span class="btn btn-secondary" role="button"> <%= link_to "To see more", event_path(event.id.to_s), style: 'color:#000000;', class: 'css_class' %> </span>
+			  </div>
+			</div>
+		<% end %>	
+	</div>
+</div>

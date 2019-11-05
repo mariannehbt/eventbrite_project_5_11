@@ -3,31 +3,76 @@
 
 require 'faker'
 
-nb_users = 10
-nb_users_yopmail = 5
-nb_events = 10
-nb_attendances = 10
+puts '#############################'
+puts '#   Starting seed process   #'
+puts '#############################'
 
-#Create n fake users with Faker gem
-nb_users.times do |i|
-	User.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::GreekPhilosophers.quote, email: Faker::Internet.email, encrypted_password: "test")
-	puts "User ##{i +1} created"
+puts '',''
+puts '#' * 40
+puts 'Wiping database'
+
+ActiveRecord::Base.establish_connection
+ActiveRecord::Base.connection.tables.each do |table|
+  # deletes all tables in DB except for the schema one
+  next if table == 'schema_migrations' || table == 'ar_internal_metadata'
+  ActiveRecord::Base.connection.execute("TRUNCATE #{table}")
+  ActiveRecord::Base.connection.reset_pk_sequence!(table)
 end
 
-#Create n fake users with a yopmail adress with Faker gem
-nb_users_yopmail.times do |i|
-	User.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::GreekPhilosophers.quote, email: Faker::Ancient.primordial + '@yopmail.com', encrypted_password: "test")
-	puts "User ##{i +1} created"
+puts '-' * 10 + 'Database wiped' + '- * 10'
+puts ''
+
+puts '#' * 40
+puts 'Creating users'
+
+10.times do
+  User.create!(
+    email: Faker::Internet.email,
+    password: 'passwordpassword',
+    first_name: Faker::Name.first_name,
+    last_name: Faker::Name.last_name,
+    description: Faker::Lorem.sentence(word_count: 2)
+  )
 end
 
-#Create n fake events with Faker gem linked to users
-nb_events.times do |i|
-	Event.create(start_date: Faker::Date.between(from: Date.today, to: 1.year.from_now), duration: rand(1..3), title: Faker::Book.title, description: Faker::GreekPhilosophers.quote, price: rand(1..1000), location: Faker::Address.city)
-	puts "Event ##{i +1} created"
+puts '-' * 10 + 'Users created ' + '- * 10'
+puts ''
+
+puts '#' * 40
+puts 'Creating events'
+
+4.times do
+  Event.create!(
+    title: Faker::Lorem.sentence(word_count: 2),
+    start_date: Time.now + rand(10000..50000),
+    duration: rand(1..5) * 20,
+    description: Faker::Lorem.sentence(word_count: 10),
+    price: rand(3..90) * 10,
+    location: Faker::Address.city,
+    host_id: User.all.sample.id
+  )
 end
 
-#Create n fake attendances with Faker gem linked to users and events
-nb_attendances.times do |i|
-	Attendance.create(stripe_customer_id: Faker::Dessert.variety)
-	puts "Attendance ##{i +1} created"
+puts '-' * 10 + 'Events created' + '- * 10'
+puts ''
+
+puts '#' * 40
+puts 'Creating attendances'
+users_ids = User.all.ids
+Event.all.each do |event|
+  (users_ids - [event.host.id]).sample(rand(2..5)).each do |user_id|
+    Attendance.create!(
+      stripe_customer_id: Faker::Alphanumeric.unique.alpha(number: 10),
+      attended_event_id: event.id,
+      guest_id: user_id
+    )
+    end
 end
+
+puts '-' * 10 + 'Attendances created' + '- * 10'
+puts '',''
+
+puts '###################################'
+puts '#   Seeding complete - no error   #'
+puts '###################################'
+puts '',''
