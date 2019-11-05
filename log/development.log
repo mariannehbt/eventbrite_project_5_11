@@ -5574,3 +5574,1753 @@ puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (12.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (206.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "eventbrite_project_development"[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (229.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "eventbrite_project_test"[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (637.7ms)[0m  [1m[35mCREATE DATABASE "eventbrite_project_development" ENCODING = 'unicode'[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (658.9ms)[0m  [1m[35mCREATE DATABASE "eventbrite_project_test" ENCODING = 'unicode'[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (9.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1622879689476317265)[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+Migrating to CreateUsers (20191104114150)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (16.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "description" text, "first_name" character varying, "last_name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20191104114150_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191104114150"]]
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+Migrating to CreateEvents (20191104114808)
+  [1m[35m (6.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (14.7ms)[0m  [1m[35mCREATE TABLE "events" ("id" bigserial primary key, "start_date" timestamp, "duration" integer, "title" character varying, "description" text, "price" integer, "location" character varying, "host_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20191104114808_create_events.rb:3
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE  INDEX  "index_events_on_host_id" ON "events"  ("host_id")[0m
+  ↳ db/migrate/20191104114808_create_events.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191104114808"]]
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+Migrating to CreateAttendances (20191104115323)
+  [1m[35m (6.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (14.8ms)[0m  [1m[35mCREATE TABLE "attendances" ("id" bigserial primary key, "stripe_customer_id" character varying, "guest_id" bigint, "attended_event_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20191104115323_create_attendances.rb:3
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_attendances_on_guest_id" ON "attendances"  ("guest_id")[0m
+  ↳ db/migrate/20191104115323_create_attendances.rb:3
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_attendances_on_attended_event_id" ON "attendances"  ("attended_event_id")[0m
+  ↳ db/migrate/20191104115323_create_attendances.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191104115323"]]
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+Migrating to AddDeviseToUsers (20191105114212)
+  [1m[35m (6.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token" character varying[0m
+  ↳ db/migrate/20191105114212_add_devise_to_users.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_sent_at" timestamp[0m
+  ↳ db/migrate/20191105114212_add_devise_to_users.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_created_at" timestamp[0m
+  ↳ db/migrate/20191105114212_add_devise_to_users.rb:12
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20191105114212_add_devise_to_users.rb:38
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191105114212"]]
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (10.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-11-05 21:13:41.759804"], ["updated_at", "2019-11-05 21:13:41.759804"]]
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1622879689476317265)[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/marianneheribert/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.3/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (9.1ms)[0m  [1m[35mTRUNCATE events[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (9.5ms)[0m  [1m[35mTRUNCATE attendances[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (7.2ms)[0m  [1m[35mTRUNCATE users[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "noel.schultz@grant.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "noel.schultz@grant.co"], ["encrypted_password", "$2a$11$z2IZRpxMek6PMBJ5dcuveOyVYj8y8mOiwoqaCC.eHb5vbPEBTgXvC"], ["description", "Soluta suscipit."], ["first_name", "Kayleigh"], ["last_name", "Schmitt"], ["created_at", "2019-11-05 21:14:24.050006"], ["updated_at", "2019-11-05 21:14:24.050006"]]
+  ↳ db/seeds.rb:29
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (2.6ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.5ms)
+UserMailer#welcome_email: processed outbound mail in 341.4ms
+Sent mail to noel.schultz@grant.co (81.9ms)
+Date: Tue, 05 Nov 2019 22:14:24 +0100
+From: no-reply@monsite.fr
+To: noel.schultz@grant.co
+Message-ID: <5dc1e630669ff_95323ff5c4c32e3c61476@MacBook-Air-de-Marianne-2.local.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e6306252a_95323ff5c4c32e3c61319";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e6306252a_95323ff5c4c32e3c61319
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgS2F5bGVpZ2ggZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIGh0dHBzOi8vZXZl
+bnRicml0ZXByb2plY3QuaGVyb2t1YXBwLmNvbS8gZW4gdXRpbGlzYW50IGwn
+ZS1tYWlsIHN1aXZhbnQgOiBub2VsLnNjaHVsdHpAZ3JhbnQuY28uDQogDQpQ
+b3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xpZW50LCBjb25uZWN0ZS10
+b2kgdmlhIDogaHR0cHM6Ly9ldmVudGJyaXRlcHJvamVjdC5oZXJva3VhcHAu
+Y29tLg0KIA0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRicml0ZXByb2plY3Qu
+aGVyb2t1YXBwLmNvbSAhDQoNCg==
+
+----==_mimepart_5dc1e6306252a_95323ff5c4c32e3c61319
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Kayleigh et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : noel=
+.schultz@grant.co.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://eventbriteproject.herokuapp.com.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventbriteproject.herokuapp.com ! </p>=0D=
+
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5dc1e6306252a_95323ff5c4c32e3c61319--
+
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "vonda@prosacco.org"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "vonda@prosacco.org"], ["encrypted_password", "$2a$11$ZeXZlV98AEr5EMK7JWSKn.YTvwR.hWFVwvrZ84CBxi5US7sy7VNjS"], ["description", "Quas voluptatem."], ["first_name", "Kendrick"], ["last_name", "Larson"], ["created_at", "2019-11-05 21:14:24.651871"], ["updated_at", "2019-11-05 21:14:24.651871"]]
+  ↳ db/seeds.rb:29
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.3ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 148.1ms
+Sent mail to vonda@prosacco.org (113.7ms)
+Date: Tue, 05 Nov 2019 22:14:24 +0100
+From: no-reply@monsite.fr
+To: vonda@prosacco.org
+Message-ID: <5dc1e630c44aa_95323ff5c4c32e3c61615@MacBook-Air-de-Marianne-2.local.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e630c2df0_95323ff5c4c32e3c615a2";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e630c2df0_95323ff5c4c32e3c615a2
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgS2VuZHJpY2sgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIGh0dHBzOi8vZXZl
+bnRicml0ZXByb2plY3QuaGVyb2t1YXBwLmNvbS8gZW4gdXRpbGlzYW50IGwn
+ZS1tYWlsIHN1aXZhbnQgOiB2b25kYUBwcm9zYWNjby5vcmcuDQogDQpQb3Vy
+IGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xpZW50LCBjb25uZWN0ZS10b2kg
+dmlhIDogaHR0cHM6Ly9ldmVudGJyaXRlcHJvamVjdC5oZXJva3VhcHAuY29t
+Lg0KIA0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRicml0ZXByb2plY3QuaGVy
+b2t1YXBwLmNvbSAhDQoNCg==
+
+----==_mimepart_5dc1e630c2df0_95323ff5c4c32e3c615a2
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Kendrick et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : vond=
+a@prosacco.org.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://eventbriteproject.herokuapp.com.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventbriteproject.herokuapp.com ! </p>=0D=
+
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5dc1e630c2df0_95323ff5c4c32e3c615a2--
+
+  [1m[35m (19.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "claria_bins@mraz.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "claria_bins@mraz.co"], ["encrypted_password", "$2a$11$S3mP5RKkq2IDzAHqo5pBWu85nicOBP6WNskPhXLYB51XphQeWos8."], ["description", "Provident facilis."], ["first_name", "Alejandro"], ["last_name", "Keeling"], ["created_at", "2019-11-05 21:14:25.287601"], ["updated_at", "2019-11-05 21:14:25.287601"]]
+  ↳ db/seeds.rb:29
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.2ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 142.5ms
+Sent mail to claria_bins@mraz.co (26.6ms)
+Date: Tue, 05 Nov 2019 22:14:25 +0100
+From: no-reply@monsite.fr
+To: claria_bins@mraz.co
+Message-ID: <5dc1e6316a16f_95323ff5c4c32e3c61877@MacBook-Air-de-Marianne-2.local.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e6316930f_95323ff5c4c32e3c61721";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e6316930f_95323ff5c4c32e3c61721
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgQWxlamFuZHJvIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1ciBodHRwczovL2V2
+ZW50YnJpdGVwcm9qZWN0Lmhlcm9rdWFwcC5jb20vIGVuIHV0aWxpc2FudCBs
+J2UtbWFpbCBzdWl2YW50IDogY2xhcmlhX2JpbnNAbXJhei5jby4NCiANClBv
+dXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGllbnQsIGNvbm5lY3RlLXRv
+aSB2aWEgOiBodHRwczovL2V2ZW50YnJpdGVwcm9qZWN0Lmhlcm9rdWFwcC5j
+b20uDQogDQrDgCB0csOocyB2aXRlIHN1ciBldmVudGJyaXRlcHJvamVjdC5o
+ZXJva3VhcHAuY29tICENCg0K
+
+----==_mimepart_5dc1e6316930f_95323ff5c4c32e3c61721
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Alejandro et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : clar=
+ia_bins@mraz.co.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://eventbriteproject.herokuapp.com.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventbriteproject.herokuapp.com ! </p>=0D=
+
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5dc1e6316930f_95323ff5c4c32e3c61721--
+
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "grover.sipes@kaulkeconn.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "grover.sipes@kaulkeconn.com"], ["encrypted_password", "$2a$11$gN8SsBHtJivwug2XCg9yW.651B//88jqAdyb9JNPuzY2CPkaosKz2"], ["description", "Cupiditate molestiae."], ["first_name", "Kevin"], ["last_name", "Rohan"], ["created_at", "2019-11-05 21:14:25.752838"], ["updated_at", "2019-11-05 21:14:25.752838"]]
+  ↳ db/seeds.rb:29
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 95.5ms
+Sent mail to grover.sipes@kaulkeconn.com (38.8ms)
+Date: Tue, 05 Nov 2019 22:14:25 +0100
+From: no-reply@monsite.fr
+To: grover.sipes@kaulkeconn.com
+Message-ID: <5dc1e631d029c_95323ff5c4c32e3c620bc@MacBook-Air-de-Marianne-2.local.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e631cf3b1_95323ff5c4c32e3c6198d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e631cf3b1_95323ff5c4c32e3c6198d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgS2V2aW4gZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIGh0dHBzOi8vZXZlbnRi
+cml0ZXByb2plY3QuaGVyb2t1YXBwLmNvbS8gZW4gdXRpbGlzYW50IGwnZS1t
+YWlsIHN1aXZhbnQgOiBncm92ZXIuc2lwZXNAa2F1bGtlY29ubi5jb20uDQog
+DQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xpZW50LCBjb25uZWN0
+ZS10b2kgdmlhIDogaHR0cHM6Ly9ldmVudGJyaXRlcHJvamVjdC5oZXJva3Vh
+cHAuY29tLg0KIA0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRicml0ZXByb2pl
+Y3QuaGVyb2t1YXBwLmNvbSAhDQoNCg==
+
+----==_mimepart_5dc1e631cf3b1_95323ff5c4c32e3c6198d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Kevin et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : grov=
+er.sipes@kaulkeconn.com.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://eventbriteproject.herokuapp.com.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventbriteproject.herokuapp.com ! </p>=0D=
+
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5dc1e631cf3b1_95323ff5c4c32e3c6198d--
+
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "merrill@kling.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "merrill@kling.co"], ["encrypted_password", "$2a$11$KJfxYxs61CM5l49uXGwSPurLvEcN2AUYErGDkdvbeuFeRPZy9t8bu"], ["description", "Qui consequatur."], ["first_name", "Lilian"], ["last_name", "Jacobson"], ["created_at", "2019-11-05 21:14:26.239904"], ["updated_at", "2019-11-05 21:14:26.239904"]]
+  ↳ db/seeds.rb:29
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.2ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 66.7ms
+Sent mail to merrill@kling.co (29.6ms)
+Date: Tue, 05 Nov 2019 22:14:26 +0100
+From: no-reply@monsite.fr
+To: merrill@kling.co
+Message-ID: <5dc1e6324bc2d_95323ff5c4c32e3c62217@MacBook-Air-de-Marianne-2.local.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e6324a63e_95323ff5c4c32e3c62110";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e6324a63e_95323ff5c4c32e3c62110
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTGlsaWFuIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1ciBodHRwczovL2V2ZW50
+YnJpdGVwcm9qZWN0Lmhlcm9rdWFwcC5jb20vIGVuIHV0aWxpc2FudCBsJ2Ut
+bWFpbCBzdWl2YW50IDogbWVycmlsbEBrbGluZy5jby4NCiANClBvdXIgYWNj
+w6lkZXIgw6AgdG9uIGVzcGFjZSBjbGllbnQsIGNvbm5lY3RlLXRvaSB2aWEg
+OiBodHRwczovL2V2ZW50YnJpdGVwcm9qZWN0Lmhlcm9rdWFwcC5jb20uDQog
+DQrDgCB0csOocyB2aXRlIHN1ciBldmVudGJyaXRlcHJvamVjdC5oZXJva3Vh
+cHAuY29tICENCg0K
+
+----==_mimepart_5dc1e6324a63e_95323ff5c4c32e3c62110
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Lilian et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : merr=
+ill@kling.co.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://eventbriteproject.herokuapp.com.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventbriteproject.herokuapp.com ! </p>=0D=
+
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5dc1e6324a63e_95323ff5c4c32e3c62110--
+
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "katy_miller@prohaskasporer.io"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "katy_miller@prohaskasporer.io"], ["encrypted_password", "$2a$11$MHmZTbUixXV0h39pEro.QudcLTxKcQvb1thXCgrf5OpJwwdETCn5S"], ["description", "Nostrum deserunt."], ["first_name", "Kourtney"], ["last_name", "Halvorson"], ["created_at", "2019-11-05 21:14:26.680579"], ["updated_at", "2019-11-05 21:14:26.680579"]]
+  ↳ db/seeds.rb:29
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 98.2ms
+Sent mail to katy_miller@prohaskasporer.io (33.5ms)
+Date: Tue, 05 Nov 2019 22:14:26 +0100
+From: no-reply@monsite.fr
+To: katy_miller@prohaskasporer.io
+Message-ID: <5dc1e632bf672_95323ff5c4c32e3c624fc@MacBook-Air-de-Marianne-2.local.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e632bd779_95323ff5c4c32e3c62373";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e632bd779_95323ff5c4c32e3c62373
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgS291cnRuZXkgZXQgYmllbnZlbnVlIGNoZXogbm91cyAhDQo9PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09DQogDQpUdSB0J2VzIGluc2NyaXQgc3VyIGh0dHBzOi8vZXZl
+bnRicml0ZXByb2plY3QuaGVyb2t1YXBwLmNvbS8gZW4gdXRpbGlzYW50IGwn
+ZS1tYWlsIHN1aXZhbnQgOiBrYXR5X21pbGxlckBwcm9oYXNrYXNwb3Jlci5p
+by4NCiANClBvdXIgYWNjw6lkZXIgw6AgdG9uIGVzcGFjZSBjbGllbnQsIGNv
+bm5lY3RlLXRvaSB2aWEgOiBodHRwczovL2V2ZW50YnJpdGVwcm9qZWN0Lmhl
+cm9rdWFwcC5jb20uDQogDQrDgCB0csOocyB2aXRlIHN1ciBldmVudGJyaXRl
+cHJvamVjdC5oZXJva3VhcHAuY29tICENCg0K
+
+----==_mimepart_5dc1e632bd779_95323ff5c4c32e3c62373
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Kourtney et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : katy=
+_miller@prohaskasporer.io.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://eventbriteproject.herokuapp.com.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventbriteproject.herokuapp.com ! </p>=0D=
+
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5dc1e632bd779_95323ff5c4c32e3c62373--
+
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "johnathon.witting@runte.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "johnathon.witting@runte.co"], ["encrypted_password", "$2a$11$hosSt2gjZKlYoX1ecULLtex/cwRBN/ZielJ7G/Veh/6noAYfmZHZm"], ["description", "Ea dolorum."], ["first_name", "Herman"], ["last_name", "Turner"], ["created_at", "2019-11-05 21:14:27.135276"], ["updated_at", "2019-11-05 21:14:27.135276"]]
+  ↳ db/seeds.rb:29
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.6ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 132.3ms
+Sent mail to johnathon.witting@runte.co (42.8ms)
+Date: Tue, 05 Nov 2019 22:14:27 +0100
+From: no-reply@monsite.fr
+To: johnathon.witting@runte.co
+Message-ID: <5dc1e6334265e_95323ff5c4c32e3c6269a@MacBook-Air-de-Marianne-2.local.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e63341a33_95323ff5c4c32e3c62530";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63341a33_95323ff5c4c32e3c62530
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgSGVybWFuIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1ciBodHRwczovL2V2ZW50
+YnJpdGVwcm9qZWN0Lmhlcm9rdWFwcC5jb20vIGVuIHV0aWxpc2FudCBsJ2Ut
+bWFpbCBzdWl2YW50IDogam9obmF0aG9uLndpdHRpbmdAcnVudGUuY28uDQog
+DQpQb3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xpZW50LCBjb25uZWN0
+ZS10b2kgdmlhIDogaHR0cHM6Ly9ldmVudGJyaXRlcHJvamVjdC5oZXJva3Vh
+cHAuY29tLg0KIA0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRicml0ZXByb2pl
+Y3QuaGVyb2t1YXBwLmNvbSAhDQoNCg==
+
+----==_mimepart_5dc1e63341a33_95323ff5c4c32e3c62530
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Herman et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : john=
+athon.witting@runte.co.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://eventbriteproject.herokuapp.com.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventbriteproject.herokuapp.com ! </p>=0D=
+
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5dc1e63341a33_95323ff5c4c32e3c62530--
+
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Exists (14.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "bettye.rempel@grimes.io"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "bettye.rempel@grimes.io"], ["encrypted_password", "$2a$11$qBPZ9lWVs3ifp/45FIzmj.BNmOkVUG4tDtiwl4Kt.m0huo8T/biHu"], ["description", "Molestiae dolores."], ["first_name", "Russel"], ["last_name", "Weissnat"], ["created_at", "2019-11-05 21:14:27.708393"], ["updated_at", "2019-11-05 21:14:27.708393"]]
+  ↳ db/seeds.rb:29
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.3ms)
+UserMailer#welcome_email: processed outbound mail in 140.7ms
+Sent mail to bettye.rempel@grimes.io (45.2ms)
+Date: Tue, 05 Nov 2019 22:14:27 +0100
+From: no-reply@monsite.fr
+To: bettye.rempel@grimes.io
+Message-ID: <5dc1e633d0e68_95323ff5c4c32e3c628a4@MacBook-Air-de-Marianne-2.local.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e633cd189_95323ff5c4c32e3c627c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e633cd189_95323ff5c4c32e3c627c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgUnVzc2VsIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1ciBodHRwczovL2V2ZW50
+YnJpdGVwcm9qZWN0Lmhlcm9rdWFwcC5jb20vIGVuIHV0aWxpc2FudCBsJ2Ut
+bWFpbCBzdWl2YW50IDogYmV0dHllLnJlbXBlbEBncmltZXMuaW8uDQogDQpQ
+b3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xpZW50LCBjb25uZWN0ZS10
+b2kgdmlhIDogaHR0cHM6Ly9ldmVudGJyaXRlcHJvamVjdC5oZXJva3VhcHAu
+Y29tLg0KIA0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRicml0ZXByb2plY3Qu
+aGVyb2t1YXBwLmNvbSAhDQoNCg==
+
+----==_mimepart_5dc1e633cd189_95323ff5c4c32e3c627c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Russel et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : bett=
+ye.rempel@grimes.io.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://eventbriteproject.herokuapp.com.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventbriteproject.herokuapp.com ! </p>=0D=
+
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5dc1e633cd189_95323ff5c4c32e3c627c--
+
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Exists (1.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "gayle@whitecummings.org"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (10.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "gayle@whitecummings.org"], ["encrypted_password", "$2a$11$y8Ujmmfo6gpAY4Nb73/4Ie5UbtsaNHWcdU0jodGINB1lnAXez3wW2"], ["description", "Dolore velit."], ["first_name", "Maryln"], ["last_name", "Mraz"], ["created_at", "2019-11-05 21:14:28.156670"], ["updated_at", "2019-11-05 21:14:28.156670"]]
+  ↳ db/seeds.rb:29
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.2ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 136.2ms
+Sent mail to gayle@whitecummings.org (46.4ms)
+Date: Tue, 05 Nov 2019 22:14:28 +0100
+From: no-reply@monsite.fr
+To: gayle@whitecummings.org
+Message-ID: <5dc1e63453be7_95323ff5c4c32e3c6302c@MacBook-Air-de-Marianne-2.local.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e63451c53_95323ff5c4c32e3c629b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63451c53_95323ff5c4c32e3c629b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgTWFyeWxuIGV0IGJpZW52ZW51ZSBjaGV6IG5vdXMgIQ0KPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PQ0KIA0KVHUgdCdlcyBpbnNjcml0IHN1ciBodHRwczovL2V2ZW50
+YnJpdGVwcm9qZWN0Lmhlcm9rdWFwcC5jb20vIGVuIHV0aWxpc2FudCBsJ2Ut
+bWFpbCBzdWl2YW50IDogZ2F5bGVAd2hpdGVjdW1taW5ncy5vcmcuDQogDQpQ
+b3VyIGFjY8OpZGVyIMOgIHRvbiBlc3BhY2UgY2xpZW50LCBjb25uZWN0ZS10
+b2kgdmlhIDogaHR0cHM6Ly9ldmVudGJyaXRlcHJvamVjdC5oZXJva3VhcHAu
+Y29tLg0KIA0Kw4AgdHLDqHMgdml0ZSBzdXIgZXZlbnRicml0ZXByb2plY3Qu
+aGVyb2t1YXBwLmNvbSAhDQoNCg==
+
+----==_mimepart_5dc1e63451c53_95323ff5c4c32e3c629b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Maryln et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : gayl=
+e@whitecummings.org.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://eventbriteproject.herokuapp.com.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventbriteproject.herokuapp.com ! </p>=0D=
+
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5dc1e63451c53_95323ff5c4c32e3c629b--
+
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "gaylord@johnston.net"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:29
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "description", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "gaylord@johnston.net"], ["encrypted_password", "$2a$11$BPYov3/sE3vDWKxtVBti/elVUZNlggXexRFNI.etmtwCuMe1vWKzW"], ["description", "Recusandae dignissimos."], ["first_name", "Tequila"], ["last_name", "Feil"], ["created_at", "2019-11-05 21:14:28.685009"], ["updated_at", "2019-11-05 21:14:28.685009"]]
+  ↳ db/seeds.rb:29
+  Rendering user_mailer/welcome_email.html.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.html.erb within layouts/mailer (0.1ms)
+  Rendering user_mailer/welcome_email.text.erb within layouts/mailer
+  Rendered user_mailer/welcome_email.text.erb within layouts/mailer (0.1ms)
+UserMailer#welcome_email: processed outbound mail in 114.2ms
+Sent mail to gaylord@johnston.net (42.9ms)
+Date: Tue, 05 Nov 2019 22:14:28 +0100
+From: no-reply@monsite.fr
+To: gaylord@johnston.net
+Message-ID: <5dc1e634cfba8_95323ff5c4c32e3c632e@MacBook-Air-de-Marianne-2.local.mail>
+Subject: Bienvenue chez nous !
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e634cda9f_95323ff5c4c32e3c631f6";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e634cda9f_95323ff5c4c32e3c631f6
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+U2FsdXQgVGVxdWlsYSBldCBiaWVudmVudWUgY2hleiBub3VzICENCj09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT0NCiANClR1IHQnZXMgaW5zY3JpdCBzdXIgaHR0cHM6Ly9ldmVu
+dGJyaXRlcHJvamVjdC5oZXJva3VhcHAuY29tLyBlbiB1dGlsaXNhbnQgbCdl
+LW1haWwgc3VpdmFudCA6IGdheWxvcmRAam9obnN0b24ubmV0Lg0KIA0KUG91
+ciBhY2PDqWRlciDDoCB0b24gZXNwYWNlIGNsaWVudCwgY29ubmVjdGUtdG9p
+IHZpYSA6IGh0dHBzOi8vZXZlbnRicml0ZXByb2plY3QuaGVyb2t1YXBwLmNv
+bS4NCiANCsOAIHRyw6hzIHZpdGUgc3VyIGV2ZW50YnJpdGVwcm9qZWN0Lmhl
+cm9rdWFwcC5jb20gIQ0KDQo=
+
+----==_mimepart_5dc1e634cda9f_95323ff5c4c32e3c631f6
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />=0D
+    <style>=0D
+      /* Email styles need to be inline */=0D
+    </style>=0D
+  </head>=0D
+=0D
+  <body>=0D
+    <!DOCTYPE html>=0D
+<html>=0D
+  <head>=0D
+    <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Content-Ty=
+pe' />=0D
+  </head>=0D
+  <body>=0D
+    <h1>Salut Tequila et bienvenue chez nous !</h1>=0D
+    <p>=0D
+      Tu t'es inscrit sur monsite.fr en utilisant l'e-mail suivant : gayl=
+ord@johnston.net.=0D
+    </p>=0D
+    <p>=0D
+      Pour acc=C3=A9der =C3=A0 ton espace client, connecte-toi via : http=
+s://eventbriteproject.herokuapp.com.=0D
+    </p>=0D
+    <p> =C3=80 tr=C3=A8s vite sur eventbriteproject.herokuapp.com ! </p>=0D=
+
+  </body>=0D
+</html>=0D
+  </body>=0D
+</html>=0D
+
+----==_mimepart_5dc1e634cda9f_95323ff5c4c32e3c631f6--
+
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mEvent Create (1.1ms)[0m  [1m[32mINSERT INTO "events" ("start_date", "duration", "title", "description", "price", "location", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["start_date", "2019-11-06 02:49:06.938409"], ["duration", 40], ["title", "Laudantium nisi."], ["description", "Ea omnis ipsa non quia voluptatibus nulla est a eum."], ["price", 210], ["location", "North Vestaside"], ["host_id", 2], ["created_at", "2019-11-05 21:14:28.997496"], ["updated_at", "2019-11-05 21:14:28.997496"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (16.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (14.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("start_date", "duration", "title", "description", "price", "location", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["start_date", "2019-11-06 06:57:59.087637"], ["duration", 60], ["title", "Ab ratione."], ["description", "Repudiandae qui est aut sed enim velit pariatur sint delectus."], ["price", 820], ["location", "North Rosaura"], ["host_id", 10], ["created_at", "2019-11-05 21:14:29.112237"], ["updated_at", "2019-11-05 21:14:29.112237"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mEvent Create (5.6ms)[0m  [1m[32mINSERT INTO "events" ("start_date", "duration", "title", "description", "price", "location", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["start_date", "2019-11-06 03:21:38.123863"], ["duration", 100], ["title", "Non porro."], ["description", "Voluptas laudantium repellat cupiditate recusandae doloremque ab quos voluptatum ullam."], ["price", 490], ["location", "Bartellfurt"], ["host_id", 4], ["created_at", "2019-11-05 21:14:29.129437"], ["updated_at", "2019-11-05 21:14:29.129437"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:45
+  [1m[36mEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "events" ("start_date", "duration", "title", "description", "price", "location", "host_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["start_date", "2019-11-06 10:18:36.202130"], ["duration", 60], ["title", "Qui sit."], ["description", "Asperiores voluptates non ut suscipit rerum blanditiis odio minima placeat."], ["price", 660], ["location", "South Moonbury"], ["host_id", 2], ["created_at", "2019-11-05 21:14:29.208276"], ["updated_at", "2019-11-05 21:14:29.208276"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "users"."id" FROM "users"[0m
+  ↳ db/seeds.rb:61
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "fqxbhgwowr"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Create (1.1ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "guest_id", "attended_event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "fqxbhgwowr"], ["guest_id", 9], ["attended_event_id", 1], ["created_at", "2019-11-05 21:14:29.297830"], ["updated_at", "2019-11-05 21:14:29.297830"]]
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/attendance.rb:16
+  Rendering attendance_mailer/new_guest_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.html.erb within layouts/mailer (0.3ms)
+  Rendering attendance_mailer/new_guest_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.text.erb within layouts/mailer (0.3ms)
+AttendanceMailer#new_guest_email: processed outbound mail in 54.4ms
+Sent mail to vonda@prosacco.org (26.2ms)
+Date: Tue, 05 Nov 2019 22:14:29 +0100
+From: no-reply@monsite.fr
+To: vonda@prosacco.org
+Message-ID: <5dc1e6355b09f_95323ff5c4c32e3c634be@MacBook-Air-de-Marianne-2.local.mail>
+Subject: =?UTF-8?Q?Nouvel_=C3=A9v=C3=A8nement_cr=C3=A9=C3=A9_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e6355a265_95323ff5c4c32e3c6335a";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e6355a265_95323ff5c4c32e3c6335a
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e6355a265_95323ff5c4c32e3c6335a
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+
+  </body>
+</html>
+
+----==_mimepart_5dc1e6355a265_95323ff5c4c32e3c6335a--
+
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "riciggrnil"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Create (0.4ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "guest_id", "attended_event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "riciggrnil"], ["guest_id", 5], ["attended_event_id", 1], ["created_at", "2019-11-05 21:14:29.417256"], ["updated_at", "2019-11-05 21:14:29.417256"]]
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/attendance.rb:16
+  Rendering attendance_mailer/new_guest_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/new_guest_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.text.erb within layouts/mailer (0.1ms)
+AttendanceMailer#new_guest_email: processed outbound mail in 117.8ms
+Sent mail to vonda@prosacco.org (130.8ms)
+Date: Tue, 05 Nov 2019 22:14:29 +0100
+From: no-reply@monsite.fr
+To: vonda@prosacco.org
+Message-ID: <5dc1e6358415d_95323ff5c4c32e3c63667@MacBook-Air-de-Marianne-2.local.mail>
+Subject: =?UTF-8?Q?Nouvel_=C3=A9v=C3=A8nement_cr=C3=A9=C3=A9_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e63582be1_95323ff5c4c32e3c635e5";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63582be1_95323ff5c4c32e3c635e5
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63582be1_95323ff5c4c32e3c635e5
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+
+  </body>
+</html>
+
+----==_mimepart_5dc1e63582be1_95323ff5c4c32e3c635e5--
+
+  [1m[35m (50.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (8.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Exists (5.3ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "xpfyksbmsp"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Create (1.2ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "guest_id", "attended_event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "xpfyksbmsp"], ["guest_id", 4], ["attended_event_id", 1], ["created_at", "2019-11-05 21:14:29.751870"], ["updated_at", "2019-11-05 21:14:29.751870"]]
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (20.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/attendance.rb:16
+  Rendering attendance_mailer/new_guest_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/new_guest_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.text.erb within layouts/mailer (0.1ms)
+AttendanceMailer#new_guest_email: processed outbound mail in 356.7ms
+Sent mail to vonda@prosacco.org (110.7ms)
+Date: Tue, 05 Nov 2019 22:14:30 +0100
+From: no-reply@monsite.fr
+To: vonda@prosacco.org
+Message-ID: <5dc1e6362b71c_95323ff5c4c32e3c638de@MacBook-Air-de-Marianne-2.local.mail>
+Subject: =?UTF-8?Q?Nouvel_=C3=A9v=C3=A8nement_cr=C3=A9=C3=A9_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e63629567_95323ff5c4c32e3c63793";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63629567_95323ff5c4c32e3c63793
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63629567_95323ff5c4c32e3c63793
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+
+  </body>
+</html>
+
+----==_mimepart_5dc1e63629567_95323ff5c4c32e3c63793--
+
+  [1m[35m (50.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mEvent Load (27.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Exists (14.3ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "gvvtnqbmzk"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Create (0.7ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "guest_id", "attended_event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "gvvtnqbmzk"], ["guest_id", 7], ["attended_event_id", 1], ["created_at", "2019-11-05 21:14:30.399581"], ["updated_at", "2019-11-05 21:14:30.399581"]]
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/attendance.rb:16
+  Rendering attendance_mailer/new_guest_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/new_guest_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.text.erb within layouts/mailer (0.1ms)
+AttendanceMailer#new_guest_email: processed outbound mail in 156.8ms
+Sent mail to vonda@prosacco.org (96.6ms)
+Date: Tue, 05 Nov 2019 22:14:30 +0100
+From: no-reply@monsite.fr
+To: vonda@prosacco.org
+Message-ID: <5dc1e6368a0c0_95323ff5c4c32e3c6403a@MacBook-Air-de-Marianne-2.local.mail>
+Subject: =?UTF-8?Q?Nouvel_=C3=A9v=C3=A8nement_cr=C3=A9=C3=A9_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e63688239_95323ff5c4c32e3c639fc";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63688239_95323ff5c4c32e3c639fc
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63688239_95323ff5c4c32e3c639fc
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+
+  </body>
+</html>
+
+----==_mimepart_5dc1e63688239_95323ff5c4c32e3c639fc--
+
+  [1m[35m (25.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Exists (3.7ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "dqdhwzywzc"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Create (1.8ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "guest_id", "attended_event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "dqdhwzywzc"], ["guest_id", 8], ["attended_event_id", 2], ["created_at", "2019-11-05 21:14:30.718416"], ["updated_at", "2019-11-05 21:14:30.718416"]]
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/models/attendance.rb:16
+  Rendering attendance_mailer/new_guest_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/new_guest_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.text.erb within layouts/mailer (0.1ms)
+AttendanceMailer#new_guest_email: processed outbound mail in 216.3ms
+Sent mail to gaylord@johnston.net (45.2ms)
+Date: Tue, 05 Nov 2019 22:14:30 +0100
+From: no-reply@monsite.fr
+To: gaylord@johnston.net
+Message-ID: <5dc1e636e687c_95323ff5c4c32e3c64258@MacBook-Air-de-Marianne-2.local.mail>
+Subject: =?UTF-8?Q?Nouvel_=C3=A9v=C3=A8nement_cr=C3=A9=C3=A9_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e636e4c19_95323ff5c4c32e3c6418e";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e636e4c19_95323ff5c4c32e3c6418e
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e636e4c19_95323ff5c4c32e3c6418e
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+
+  </body>
+</html>
+
+----==_mimepart_5dc1e636e4c19_95323ff5c4c32e3c6418e--
+
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "wwtzahzraj"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Create (0.6ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "guest_id", "attended_event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "wwtzahzraj"], ["guest_id", 9], ["attended_event_id", 2], ["created_at", "2019-11-05 21:14:31.009108"], ["updated_at", "2019-11-05 21:14:31.009108"]]
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/models/attendance.rb:16
+  Rendering attendance_mailer/new_guest_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/new_guest_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.text.erb within layouts/mailer (0.0ms)
+AttendanceMailer#new_guest_email: processed outbound mail in 122.2ms
+Sent mail to gaylord@johnston.net (185.6ms)
+Date: Tue, 05 Nov 2019 22:14:31 +0100
+From: no-reply@monsite.fr
+To: gaylord@johnston.net
+Message-ID: <5dc1e6372281c_95323ff5c4c32e3c644a7@MacBook-Air-de-Marianne-2.local.mail>
+Subject: =?UTF-8?Q?Nouvel_=C3=A9v=C3=A8nement_cr=C3=A9=C3=A9_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e63720e27_95323ff5c4c32e3c64363";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63720e27_95323ff5c4c32e3c64363
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63720e27_95323ff5c4c32e3c64363
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+
+  </body>
+</html>
+
+----==_mimepart_5dc1e63720e27_95323ff5c4c32e3c64363--
+
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "kaictuebft"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Create (0.7ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "guest_id", "attended_event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "kaictuebft"], ["guest_id", 7], ["attended_event_id", 2], ["created_at", "2019-11-05 21:14:31.347856"], ["updated_at", "2019-11-05 21:14:31.347856"]]
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/models/attendance.rb:16
+  Rendering attendance_mailer/new_guest_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/new_guest_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.text.erb within layouts/mailer (0.0ms)
+AttendanceMailer#new_guest_email: processed outbound mail in 263.7ms
+Sent mail to gaylord@johnston.net (101.9ms)
+Date: Tue, 05 Nov 2019 22:14:31 +0100
+From: no-reply@monsite.fr
+To: gaylord@johnston.net
+Message-ID: <5dc1e63798e49_95323ff5c4c32e3c646f0@MacBook-Air-de-Marianne-2.local.mail>
+Subject: =?UTF-8?Q?Nouvel_=C3=A9v=C3=A8nement_cr=C3=A9=C3=A9_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e63795c9f_95323ff5c4c32e3c64554";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63795c9f_95323ff5c4c32e3c64554
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63795c9f_95323ff5c4c32e3c64554
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+
+  </body>
+</html>
+
+----==_mimepart_5dc1e63795c9f_95323ff5c4c32e3c64554--
+
+  [1m[35m (15.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (11.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:63
+  [1m[35m (10.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mEvent Load (1.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "yixecdtldk"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Create (0.5ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "guest_id", "attended_event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "yixecdtldk"], ["guest_id", 6], ["attended_event_id", 3], ["created_at", "2019-11-05 21:14:31.784446"], ["updated_at", "2019-11-05 21:14:31.784446"]]
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/attendance.rb:16
+  Rendering attendance_mailer/new_guest_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/new_guest_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.text.erb within layouts/mailer (0.1ms)
+AttendanceMailer#new_guest_email: processed outbound mail in 263.6ms
+Sent mail to grover.sipes@kaulkeconn.com (199.9ms)
+Date: Tue, 05 Nov 2019 22:14:32 +0100
+From: no-reply@monsite.fr
+To: grover.sipes@kaulkeconn.com
+Message-ID: <5dc1e638d716_95323ff5c4c32e3c648e1@MacBook-Air-de-Marianne-2.local.mail>
+Subject: =?UTF-8?Q?Nouvel_=C3=A9v=C3=A8nement_cr=C3=A9=C3=A9_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e638bf04_95323ff5c4c32e3c6475a";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e638bf04_95323ff5c4c32e3c6475a
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e638bf04_95323ff5c4c32e3c6475a
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+
+  </body>
+</html>
+
+----==_mimepart_5dc1e638bf04_95323ff5c4c32e3c6475a--
+
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (2.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "unegxobith"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Create (6.5ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "guest_id", "attended_event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "unegxobith"], ["guest_id", 10], ["attended_event_id", 3], ["created_at", "2019-11-05 21:14:32.276562"], ["updated_at", "2019-11-05 21:14:32.276562"]]
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/attendance.rb:16
+  Rendering attendance_mailer/new_guest_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/new_guest_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.text.erb within layouts/mailer (0.1ms)
+AttendanceMailer#new_guest_email: processed outbound mail in 231.4ms
+Sent mail to grover.sipes@kaulkeconn.com (335.6ms)
+Date: Tue, 05 Nov 2019 22:14:32 +0100
+From: no-reply@monsite.fr
+To: grover.sipes@kaulkeconn.com
+Message-ID: <5dc1e6387f785_95323ff5c4c32e3c650d4@MacBook-Air-de-Marianne-2.local.mail>
+Subject: =?UTF-8?Q?Nouvel_=C3=A9v=C3=A8nement_cr=C3=A9=C3=A9_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e6387d803_95323ff5c4c32e3c649c4";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e6387d803_95323ff5c4c32e3c649c4
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e6387d803_95323ff5c4c32e3c649c4
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+
+  </body>
+</html>
+
+----==_mimepart_5dc1e6387d803_95323ff5c4c32e3c649c4--
+
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (31.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:63
+  [1m[35m (18.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "zzuqevkscc"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Create (3.9ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "guest_id", "attended_event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "zzuqevkscc"], ["guest_id", 9], ["attended_event_id", 4], ["created_at", "2019-11-05 21:14:32.969702"], ["updated_at", "2019-11-05 21:14:32.969702"]]
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/attendance.rb:16
+  Rendering attendance_mailer/new_guest_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/new_guest_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.text.erb within layouts/mailer (0.1ms)
+AttendanceMailer#new_guest_email: processed outbound mail in 178.1ms
+Sent mail to vonda@prosacco.org (228.1ms)
+Date: Tue, 05 Nov 2019 22:14:33 +0100
+From: no-reply@monsite.fr
+To: vonda@prosacco.org
+Message-ID: <5dc1e6392a488_95323ff5c4c32e3c652c7@MacBook-Air-de-Marianne-2.local.mail>
+Subject: =?UTF-8?Q?Nouvel_=C3=A9v=C3=A8nement_cr=C3=A9=C3=A9_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e63928b79_95323ff5c4c32e3c6513f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63928b79_95323ff5c4c32e3c6513f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63928b79_95323ff5c4c32e3c6513f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+
+  </body>
+</html>
+
+----==_mimepart_5dc1e63928b79_95323ff5c4c32e3c6513f--
+
+  [1m[35m (51.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (3.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "eptqnuztzq"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Create (1.4ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "guest_id", "attended_event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "eptqnuztzq"], ["guest_id", 5], ["attended_event_id", 4], ["created_at", "2019-11-05 21:14:33.478079"], ["updated_at", "2019-11-05 21:14:33.478079"]]
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/attendance.rb:16
+  Rendering attendance_mailer/new_guest_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/new_guest_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.text.erb within layouts/mailer (0.1ms)
+AttendanceMailer#new_guest_email: processed outbound mail in 197.5ms
+Sent mail to vonda@prosacco.org (67.4ms)
+Date: Tue, 05 Nov 2019 22:14:33 +0100
+From: no-reply@monsite.fr
+To: vonda@prosacco.org
+Message-ID: <5dc1e639a786f_95323ff5c4c32e3c6542c@MacBook-Air-de-Marianne-2.local.mail>
+Subject: =?UTF-8?Q?Nouvel_=C3=A9v=C3=A8nement_cr=C3=A9=C3=A9_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e639a5c9c_95323ff5c4c32e3c6531f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e639a5c9c_95323ff5c4c32e3c6531f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e639a5c9c_95323ff5c4c32e3c6531f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+
+  </body>
+</html>
+
+----==_mimepart_5dc1e639a5c9c_95323ff5c4c32e3c6531f--
+
+  [1m[35m (9.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (4.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (21.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mEvent Load (4.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Exists (16.5ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "yiqicqhxmi"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Create (3.0ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "guest_id", "attended_event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "yiqicqhxmi"], ["guest_id", 10], ["attended_event_id", 4], ["created_at", "2019-11-05 21:14:33.929706"], ["updated_at", "2019-11-05 21:14:33.929706"]]
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/attendance.rb:16
+  Rendering attendance_mailer/new_guest_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/new_guest_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.text.erb within layouts/mailer (0.1ms)
+AttendanceMailer#new_guest_email: processed outbound mail in 164.0ms
+Sent mail to vonda@prosacco.org (66.8ms)
+Date: Tue, 05 Nov 2019 22:14:34 +0100
+From: no-reply@monsite.fr
+To: vonda@prosacco.org
+Message-ID: <5dc1e63a1920b_95323ff5c4c32e3c65613@MacBook-Air-de-Marianne-2.local.mail>
+Subject: =?UTF-8?Q?Nouvel_=C3=A9v=C3=A8nement_cr=C3=A9=C3=A9_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e63ac991_95323ff5c4c32e3c65597";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63ac991_95323ff5c4c32e3c65597
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63ac991_95323ff5c4c32e3c65597
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+
+  </body>
+</html>
+
+----==_mimepart_5dc1e63ac991_95323ff5c4c32e3c65597--
+
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (6.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (21.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mEvent Load (5.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "attendances" WHERE "attendances"."stripe_customer_id" = $1 LIMIT $2[0m  [["stripe_customer_id", "eaacjdqsej"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:64
+  [1m[36mAttendance Create (1.0ms)[0m  [1m[32mINSERT INTO "attendances" ("stripe_customer_id", "guest_id", "attended_event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["stripe_customer_id", "eaacjdqsej"], ["guest_id", 4], ["attended_event_id", 4], ["created_at", "2019-11-05 21:14:34.221834"], ["updated_at", "2019-11-05 21:14:34.221834"]]
+  ↳ db/seeds.rb:64
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/attendance.rb:16
+  Rendering attendance_mailer/new_guest_email.html.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.html.erb within layouts/mailer (0.1ms)
+  Rendering attendance_mailer/new_guest_email.text.erb within layouts/mailer
+  Rendered attendance_mailer/new_guest_email.text.erb within layouts/mailer (0.1ms)
+AttendanceMailer#new_guest_email: processed outbound mail in 257.6ms
+Sent mail to vonda@prosacco.org (149.2ms)
+Date: Tue, 05 Nov 2019 22:14:34 +0100
+From: no-reply@monsite.fr
+To: vonda@prosacco.org
+Message-ID: <5dc1e63a776c9_95323ff5c4c32e3c6587e@MacBook-Air-de-Marianne-2.local.mail>
+Subject: =?UTF-8?Q?Nouvel_=C3=A9v=C3=A8nement_cr=C3=A9=C3=A9_!?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5dc1e63a7549b_95323ff5c4c32e3c65716";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63a7549b_95323ff5c4c32e3c65716
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5dc1e63a7549b_95323ff5c4c32e3c65716
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+
+  </body>
+</html>
+
+----==_mimepart_5dc1e63a7549b_95323ff5c4c32e3c65716--
+
+  [1m[35m (14.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
